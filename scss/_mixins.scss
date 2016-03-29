@@ -1,0 +1,42 @@
+//--------------------------------------------------------------
+// Mixins
+//--------------------------------------------------------------
+@mixin clearfix {
+	&:before,
+	&:after {
+		content: '';
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+
+// -------------------
+// Media Query Helpers
+// -------------------
+
+@mixin breakpoint($bp, $direction: min) {
+	@media (#{$direction}-width: $bp) {
+		@content;
+	}
+}
+
+// ---------
+// Font Size
+// ---------
+
+@mixin font($size, $sizeValue) {
+	@if $size == 'light' {
+		font-family: 'TradeGothicLT-Light', 'sans-serif';
+	} @elseif $size == 'bold' {
+		font-family: 'TradeGothicLT-BoldTwo', 'sans-serif';
+	} @else {
+		font-family: 'TradeGothicLT', 'sans-serif';
+	}
+
+	font-size: ($sizeValue * $default-font-size);
+  	font-size: $sizeValue + rem;
+}
