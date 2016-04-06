@@ -1,1 +1,6 @@
-alert( 'test' );
+(function(){
+	
+
+
+})();
+

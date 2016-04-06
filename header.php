@@ -3,9 +3,5 @@
 	<head>
 		<meta name="viewport" content="inital-scale=1">
 		<link rel="stylesheet" href="build/styles.css">
-		<script src="build/vh-custom.js"></script>
 	</head>
 	<body>	
-		<h1>Test</h1>
-	</body>
-</html>
