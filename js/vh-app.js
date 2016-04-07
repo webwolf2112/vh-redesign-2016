@@ -1,13 +1,18 @@
-( function () {
-
-	var projectApp = angular.module('projects', []);
+var projectApp = angular.module('projects', []);
 
 	projectApp.directive('singleProject', function() {
 		return {
-			restrict: 'E',
-			templateUrl: 'template-parts/client-sites.php'
+			restrict : 'E',
+			templateUrl : 'template-parts/client-sites.php'
 		}
 	} );
+
+	projectApp.directive('aboutMe', function() {
+		return {
+			restrict : 'E',
+			templateUrl : 'template-parts/about-me.php'
+		}
+	});
 
 	projectApp.controller('projectsController', function($scope){
 
@@ -92,40 +97,39 @@
 	 			url: 'http://www.j-macoboulder.com/',
 	 			description: 'I successfully implemented and hand coded this pixel perfect website from the clients mock-up design. I accurately sliced all photoshop graphics, as well as hand coding HTML5, CSS3, Javascript & jQuery in this website. This website includes custom jquery and PHP as well. This website was made to be partially responsive using the Skeleton CSS grid framework. As the client preferred to have a separate mobile website I implemented a jquery mobile version of this website as well.'
 	 		},{
-	 			name: 'Laurie Kaufman Real Estate',
+	 			name: 'Laurie Kaufman Realestate',
 	 			info: 'Laurie Kaufman Real Estate',
-	 			img: '',
+	 			img: 'img/laurie.png',
 	 			url: 'http://lauriekaufman.net/',
 	 			description: 'I both designed and implemented this pixel perfect website.  Using complex realestate API to ensure accurate search results'
 	 		},{
-	 			name: '',
-	 			info: '',
-	 			img: '',
-	 			url: '',
-	 			description: ''
+	 			name: 'Lynn Ryan Realestate',
+	 			info: 'Lynn Ryan Real Estate',
+	 			img: 'img/lynnLarge.jpg',
+	 			url: 'http://lynnryanboulder.com/',
+	 			description: 'I successfully implemented and hand coded this pixel perfect website from the clients mock-up design. I accurately sliced all photoshop graphics, as well as hand coding HTML5, CSS3, Javascript & jQuery in this website. This website includes custom jquery and PHP as well. This website includes custom jquery and PHP as well.This website was made to be partially responsive using a CSS grid framework. As the client preferred to have a separate mobile website I implemented a jquery mobile version of this website as well.'
 	 		},{
-	 			name: '',
-	 			info: '',
-	 			img: '',
-	 			url: '',
-	 			description: ''
+	 			name: 'AB Installations',
+	 			info: 'AB Installations',
+	 			img: 'img/abinstall.jpg',
+	 			url: 'http://abinstallationsinc.com/',
+	 			description: 'I successfully implemented and hand coded this responsive website and assisted the designer in creating a color scheme. I accurately sliced all photoshop graphics, as well as hand coding HTML5, CSS3, Javascript & jQuery in this website.'
 	 		},{
-	 			name: '',
-	 			info: '',
-	 			img: '',
-	 			url: '',
-	 			description: ''
-	 		},{
-	 			name: '',
-	 			info: '',
-	 			img: '',
-	 			url: '',
-	 			description: ''
-	 		}
+	 			name: 'Blue Star',
+	 			info: 'Blue Star High End Kitchen Appliances',
+	 			img: 'img/bluestar.png',
+	 			url: 'http://www.bluestarcooking.com/',
+	 			description: 'I am incharge of troubleshooting and upgrating this custom wordpress website.'
+	 		},
+	 		// {
+	 		// 	name: '',
+	 		// 	info: '',
+	 		// 	img: '',
+	 		// 	url: '',
+	 		// 	description: ''
+	 		// }
      	];
 
 	} );
 
-
-})();
 
