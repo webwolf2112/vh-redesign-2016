@@ -4,6 +4,9 @@
 // >>> TABLE OF CONTENTS:
 //------------------------------------------------
 
+//Reset
+@import "css-reset";
+
 // Variables
 @import "variables";
 
@@ -15,3 +18,9 @@
 
 // Structure
 @import "structure";
+
+// Nav
+@import "nav";
+
+// Homepage 
+@import "homepage";

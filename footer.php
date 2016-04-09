@@ -1,3 +1,4 @@
+		</div><!-- end containter -->
 		<footer>
 		<div class="quote"></div>
 		</footer>

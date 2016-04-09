@@ -1,4 +1,7 @@
 <?php @include( 'header.php' ) ?>
+<div class="background-hero">
+
+</div>
 	<h1>Vanessa Henson Web Developer</h1>
 
 		<div class="projects" ng-app="projects">

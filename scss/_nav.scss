@@ -1,0 +1,74 @@
+nav {
+	@include clearfix;
+	padding: 10px 15px;
+	max-width: $max-width;
+	margin: auto;
+	background: $white;
+
+	ul {
+		width: 50%;
+		float: left;
+		padding-left: 50px;
+		margin-top: 50px;
+		box-sizing: border-box;
+		transition: all 200ms ease;
+
+		li {
+			float: left;
+			box-sizing: border-box;
+			margin-right: 5%;
+		}
+
+		&.social-icons {
+			width: 75%;
+			margin-top: 0;
+			transition: all 100ms ease;
+
+			li {
+				float: right;
+				margin-left: 20px;
+			}
+		}
+	}
+
+	.logo {
+		float: left;
+		width: 25%; 
+
+		img{
+			max-height: 100%;
+			transition: all 200ms ease;
+		}
+
+	}
+
+	&.sticky {
+			position: fixed;
+			top: 0;
+			width: 100%;
+
+		.logo {
+
+			img {
+				max-height: 70px;
+				transition: all 200ms ease;
+			}
+		}
+
+		ul {
+			width: 50%;
+			margin-top: 25px;
+			transition: all 200ms ease;
+
+			&.social-icons {
+				width: 25%;
+				float: right;
+				margin-top: 25px;
+				padding-right: 15px;
+				transition: all 100ms ease;
+			}
+		}
+	}
+
+}
+

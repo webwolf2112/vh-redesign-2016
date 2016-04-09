@@ -21,7 +21,7 @@
 
 			var randomNumber = Math.floor(Math.random() * randomQuote.length);	
 
-			var somerandom() = function (){
+			var somerandom = function (){
 
 				randomNumber = Math.floor(Math.random() * randomQuote.length);
 			 	
