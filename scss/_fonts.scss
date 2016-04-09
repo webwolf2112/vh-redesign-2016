@@ -3,3 +3,63 @@
 //--------------------------------------------------------------
 
 // Make sure to update the fonts in the mixin file
+
+body {
+	font-family: 'Catamaran', sans-serif;
+}
+
+h1, 
+h2, 
+h3, 
+h4 {
+	font-weight: bold;
+
+	&.normal {
+
+		font-weight: normal;
+	}
+
+	&.light {
+
+		font-weight: light;
+	}
+}
+
+h1 {
+	@include fontsize( 3 );
+	line-height: 2em;
+}
+
+h2 {
+	@include fontsize ( 2 );
+	line-height: 1.5em;
+}
+
+a {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	color: $dark-gray;
+	transform: all 200ms ease;
+
+	&:hover {
+		color: $gray;
+		transform: all 200ms ease;
+	}
+}
+
+
+p {
+	font-weight: light;
+	@include fontsize( 1.2 );
+
+	&.light {
+
+		font-weight: light; 
+	}
+
+	&.bold {
+
+		font-weight: bold;
+	}
+}

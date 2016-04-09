@@ -1,6 +1,133 @@
 .background-hero {
-	background: url('../img/fullSizeBackground.jpg') no-repeat;
-	background-size: cover; 
+	background: url('../img/homepage/louvre-dark.jpg') no-repeat;
+	background-size: 100%; 
 	width: 100%;
+	height: 700px;
+	position: fixed;
+	z-index: 1;
+}
+
+.content {
+	position: relative;
+	text-align: center;
+	z-index: 2;
+}
+
+.hero {
+	height: 800px;
+
+	h1 {
+		color: $white;
+	}
+
+	h2 {
+		color: $white;
+	}
+
+	p {
+		color: $white;
+		padding: 20px 50px;
+		border-top: 1px solid $white;
+		border-bottom: 1px solid $white;
+		display: inline-block;
+		margin-top: 5%;
+		width: 50%;
+	}
+
+	.table {
+		display: table;
+		height: 100%;
+		width: 70%;
+		margin: auto;
+	}
+
+	.inner-table {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+.skills {
+	@include clearfix;
+	background: $white;
+	padding: 5% 15px;
+
+	div {
+		@include boxsizing;
+	}
+
+	ul {
+		@include boxsizing;
+		width: 33.33%;
+		float: left;
+	}
+
+	.highlights {
+		display: none;
+
+		.name {
+			float: left;
+			width: 25%;
+		}
+
+		.description {
+			@include clearfix;
+			float: left;
+			width: 75%;
+			box-sizing: border-box;
+
+		}
+	}
+
+	.education {
+		display: none;
+
+		.year {
+			@include clearfix;
+			float: left;
+			width: 25%;
+		}
+
+		.field {
+			float: left;
+			width: 75%;
+		}
+	}
+}
+
+.about {
+
+	padding: 5%;
+	color: $white;
 	height: 500px;
+
+}
+
+.projects {
+	@include clearfix;
+	@include boxsizing;
+	background: $dark-gray;
+	padding: 5% 0;
+
+	h2 {
+		color: $white;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+
+	p {
+		color: $white;
+	}
+
+	.project {
+		width: 31%;
+		float: left;
+		margin: 0 1%;
+
+		img {
+			width: 100%;
+			max-width: 100%;
+		}
+	}
 }

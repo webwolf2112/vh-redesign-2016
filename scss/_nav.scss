@@ -1,27 +1,60 @@
 nav {
 	@include clearfix;
-	padding: 10px 15px;
-	max-width: $max-width;
+	box-sizing: border-box;
+	padding: 10px 25px 0px;
+	width: 100%;
 	margin: auto;
 	background: $white;
+	position: fixed;
+	border-bottom: 1px solid $gray;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+
+	a {
+		font-weight: 500;
+
+		.fa {
+			color: $black;
+			opacity: 1;
+
+			&:hover {
+				color: $gray;
+				transform: all 200ms ease;
+			}
+		}
+	}
+
+		
+	.logo {
+		float: left;
+		width: 25%;
+
+		img {
+			max-height: 100px;
+			transition: all 200ms ease;
+		}
+	}
 
 	ul {
-		width: 50%;
 		float: left;
 		padding-left: 50px;
-		margin-top: 50px;
 		box-sizing: border-box;
+		width: 50%;
+		margin-top: 50px;
 		transition: all 200ms ease;
+		text-align: center;
 
 		li {
-			float: left;
+			display: inline-block;
 			box-sizing: border-box;
 			margin-right: 5%;
 		}
 
 		&.social-icons {
-			width: 75%;
-			margin-top: 0;
+			width: 25%;
+			float: right;
+			padding-right: 15px;
 			transition: all 100ms ease;
 
 			li {
@@ -31,21 +64,7 @@ nav {
 		}
 	}
 
-	.logo {
-		float: left;
-		width: 25%; 
-
-		img{
-			max-height: 100%;
-			transition: all 200ms ease;
-		}
-
-	}
-
 	&.sticky {
-			position: fixed;
-			top: 0;
-			width: 100%;
 
 		.logo {
 
@@ -56,19 +75,49 @@ nav {
 		}
 
 		ul {
-			width: 50%;
-			margin-top: 25px;
-			transition: all 200ms ease;
 
-			&.social-icons {
-				width: 25%;
-				float: right;
-				margin-top: 25px;
-				padding-right: 15px;
-				transition: all 100ms ease;
-			}
+			margin-top: 25px;
+			transition: all 100ms ease;
 		}
 	}
 
+	label{
+		display: inline-block;
+
+		@include breakpoint( $break-medium ){
+			display: none;
+		}
+	}
+
+	.mobile-menu {
+
+		height: 0;
+
+		ul {
+			width: 100%;
+			float: none;
+			li {
+				display: block;
+				float: none;
+			}
+		}
+
+		@include breakpoint( $break-medium) {
+			@include boxsizing;
+			height: auto;
+			float: left;
+			width: 75%;
+
+		}
+	}
+
+	input {
+		display: none;
+
+		&:checked + .mobile-menu {
+			height: 100%;
+			transition: all 300ms ease;
+		}
+	}
 }
 

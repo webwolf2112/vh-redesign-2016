@@ -1,6 +1,5 @@
-		</div><!-- end containter -->
 		<footer>
-		<div class="quote"></div>
+		<div id="quote">Quote Goes Here</div>
 		</footer>
 			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
