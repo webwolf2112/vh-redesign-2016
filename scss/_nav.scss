@@ -28,39 +28,11 @@ nav {
 		
 	.logo {
 		float: left;
-		width: 25%;
+		width: 10%;
 
 		img {
 			max-height: 100px;
 			transition: all 200ms ease;
-		}
-	}
-
-	ul {
-		float: left;
-		padding-left: 50px;
-		box-sizing: border-box;
-		width: 50%;
-		margin-top: 50px;
-		transition: all 200ms ease;
-		text-align: center;
-
-		li {
-			display: inline-block;
-			box-sizing: border-box;
-			margin-right: 5%;
-		}
-
-		&.social-icons {
-			width: 25%;
-			float: right;
-			padding-right: 15px;
-			transition: all 100ms ease;
-
-			li {
-				float: right;
-				margin-left: 20px;
-			}
 		}
 	}
 
@@ -81,8 +53,12 @@ nav {
 		}
 	}
 
-	label{
-		display: inline-block;
+	label {
+		@include fontsize(2.5);
+		display: block;
+		color: $dark-gray;
+		float: right;
+		margin-top: 50px;
 
 		@include breakpoint( $break-medium ){
 			display: none;
@@ -90,8 +66,12 @@ nav {
 	}
 
 	.mobile-menu {
+		max-height: 0;
+		overflow: hidden;
+		transform: all 500ms ease;
+		clear: both;
+		text-align: right;
 
-		height: 0;
 
 		ul {
 			width: 100%;
@@ -99,16 +79,68 @@ nav {
 			li {
 				display: block;
 				float: none;
+				@include fontsize( 1.5);
+				line-height: 2em;
+			}
+
+			&.social-icons {
+				li{
+					float: right;
+					@include fontsize( 1.5);
+					margin-left: 10px;
+				}
+				
 			}
 		}
 
 		@include breakpoint( $break-medium) {
 			@include boxsizing;
-			height: auto;
+			display: block;
+			text-align: center;
+			clear: none;
 			float: left;
-			width: 75%;
+			width: 90%;
+			height: auto;
+			max-height: none;
+
+
+			ul {
+				float: left;
+				padding-left: 50px;
+				box-sizing: border-box;
+				width: 65%;
+				margin-top: 50px;
+				transition: all 200ms ease;
+				text-align: center;
+
+				li {
+					display: inline-block;
+					box-sizing: border-box;
+					margin-right: 5%;
+					@include fontsize( 1 );
+				}
+
+				&.social-icons {
+					width: 35%;
+					float: right;
+					padding-right: 15px;
+					transition: all 100ms ease;
+
+					li {
+						float: right;
+						margin-left: 10px;
+						width: auto;
+						@include fontsize( 1 );
+
+						@include breakpoint( $break-large ) {
+							margin-left: 20px;
+						}
+					}
+				}
+			}
 
 		}
+
 	}
 
 	input {
@@ -116,7 +148,8 @@ nav {
 
 		&:checked + .mobile-menu {
 			height: 100%;
-			transition: all 300ms ease;
+			transform: all 500ms ease;
+			max-height: 600px;
 		}
 	}
 }

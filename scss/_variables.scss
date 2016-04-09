@@ -5,8 +5,16 @@ $container-small : 1000px;
 ** Breakpoints
 *******************/
 
-$break-medium : 720px;
-$break-large: 1040px;
+// -----------
+// Breakpoints
+// -----------
+
+$break-small:		480px;
+$break-medium:		720px;
+$break-large:		1040px;
+$break-container:	1200px;
+$break-xl:			1800px;
+$max-width:			1200px;
 
 
 /******************
