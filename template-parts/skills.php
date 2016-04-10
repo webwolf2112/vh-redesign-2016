@@ -1,4 +1,5 @@
 <div class="skills" ng-controller="skillsController">
+	<img class="me" src="img/homepage/vanessa.jpg" alt="vanessa henson"/>
 	<h2>SKILLS I BRING TO YOU</h2>
 	<div class="skill-lists">
 		<ul ng-repeat="skillList in skills">
@@ -7,7 +8,6 @@
 		</li>
 		</ul>
 	</div>
-
 	<div class="toggle-button" ng-show="highlights" ng-click="showSection( 'highlight-toggle', 'highlights' )" class="highlight-toggle" ><span>View</span> Highlights</div>
 	<br/>
 	<section>

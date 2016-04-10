@@ -1,3 +1,7 @@
+body {
+	position: relative;
+}
+
 img {
 	display: inline-block;
 }
@@ -7,7 +11,62 @@ img {
 	margin: auto;
 }
 
-.small-container{
+.small-container {
 	max-width: $container-small;;
 	margin: auto;
 } 
+
+.xsmall-container {
+	max-width: $container-xsmall;
+	margin: auto;
+}
+
+.modal-background {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	z-index: 16;
+	background: rgba( 0,0,0, .7);
+	display:block;
+}
+
+.ui-dialog {
+	width: 90% !important;
+	max-width: 500px;
+	border-radius: 0;
+	background: rgba ( 255, 255, 255, .8);
+	text-align: center;
+
+	.ui-dialog-titlebar{
+		background: transparent;
+		border-radius: 0;
+		border: none;
+		text-transform: uppercase;
+		margin:0;
+	}
+
+	.ui-dialog-content {
+		margin-top: 0;
+
+	}
+
+	a {
+		color: $light-blue;
+		outline: none;
+
+		&:hover {
+			color: $gray;
+		}
+	}
+
+	div {
+		margin: 20px 0;
+		font-weight: 200;
+		line-height: 1em;
+
+		&:first-of-type{
+			margin: 0;
+		}
+	}
+}

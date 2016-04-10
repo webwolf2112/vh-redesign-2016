@@ -1,0 +1,43 @@
+.projects {
+	@include clearfix;
+	@include boxsizing;
+	background: $dark-gray;
+	padding: 5% 20px;
+
+	h2 {
+		@include fontsize( 3 );
+		color: $white;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+
+	p {
+		color: $white;
+		margin: 20px 0;
+	}
+
+	.project {
+		width: 48%;
+		float: left;
+		margin: 1%;
+
+		@include breakpoint( $break-medium ){
+			width: 31%;
+			margin: 1%;
+		}
+
+		img {
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+
+	.description {
+		display: none;
+	}
+
+	.name {
+		display: none;
+	}
+}

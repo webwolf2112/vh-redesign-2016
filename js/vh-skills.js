@@ -18,7 +18,7 @@
                     'Ajax'
      	    ],
               [
-                    'API Intagration',
+                    'API Integration',
                     'Wordpress',
                     'Shopify',
                     'MySQL fundamentals',

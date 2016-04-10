@@ -47,7 +47,7 @@ var projectApp = angular.module('projects', []);
 				info: 'Crocs Shoes',
 				img: 'img/crocs.jpg',
 				url: 'http://www.crocs.com/',
-				description: 'I wrote custom HTML, CSS, and Javascript for their navigation Mega Menu, and landing pages and implemented it on their demandware platform. I also coded several elements of their <a href="http://crocs.com.br/">Brazil site</a> and fixed errors from outsourced.'
+				description: 'I wrote custom HTML, CSS, and Javascript for their navigation Mega Menu, and landing pages and implemented it on their demandware platform. I also coded several elements of their http://crocs.com.br Brazil site</a> and fixed errors from outsourced.'
 	 		},{
 				name: 'Woodlands Vascular',
 				info: 'Woodlands Vascular Center',
@@ -130,6 +130,10 @@ var projectApp = angular.module('projects', []);
 	 		// }
      	];
 
+
+     	var dialogPopUp = function() {
+     		console.log( 'clicked' );
+     	}
 	} );
 
 

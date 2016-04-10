@@ -35,13 +35,52 @@
 			setInterval (function () {
 				somerandom();
 			}, 3000 );
-		}
+		} 
 
 	}
 
-	$( 'document' ).ready( function() {
+	$( document ).ready( function() {
 
 		vhScripts.init();
+
+	} ).on( "click" , ".project" , function () {
+
+		var $this = $( this );
+
+			if( ! $( '.dialog-popup').length > 0 ){
+				$( 'body' ).append('<div class="dialog-popup"></div>');
+			}
+
+			$( '.dialog-popup' ).html('');
+
+			//$this.find( '.description' ).clone().remove().appendTo( '.dialog-popup' );
+			var title = $this.find( '.name').html();
+			var description = $this.find( '.description').html();
+
+			$( '.dialog-popup').html( description );	
+
+
+			$( '.dialog-popup ').dialog( {
+				draggable : false,
+				title: title,
+				open: function () {
+					$( 'body' ).prepend( '<div class="modal-background"></div>' );
+				},
+
+				close: function() {
+					$( '.modal-background' ).remove();
+				},
+				
+			});
+
+
+
+
+
+	} ).on( "click", '.modal-background', function() {
+
+		$( '.dialog-popup ').dialog('close');
+		$( this ).remove();
 
 	} );
 
