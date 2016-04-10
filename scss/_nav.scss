@@ -57,7 +57,7 @@ nav {
 		display: block;
 		color: $dark-gray;
 		float: right;
-		margin-top: 50px;
+		margin-top: 25px;
 
 		@include breakpoint( $break-medium ){
 			display: none;

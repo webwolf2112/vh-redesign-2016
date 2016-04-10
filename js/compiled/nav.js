@@ -26,11 +26,9 @@ var context;
 				    }, 1000);
 
 				    //close the mobile menu
+				    $( '#hamburger-helper').prop( "checked", false );
 
-				    if( context === 'mobile' ){
-				    	$( '#hamburger-helper').prop( "checked", false );
-
-				    }
+				    
 
 				    return false;
 				  }
