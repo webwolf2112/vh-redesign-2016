@@ -22,9 +22,27 @@
 		float: left;
 		margin: 1%;
 
+
+		&:nth-child( odd ){
+			clear:both;
+		}
+
+
+	
 		@include breakpoint( $break-medium ){
 			width: 31%;
 			margin: 1%;
+
+			&:nth-child(3n+3){
+				clear: both;
+			}
+
+			&:nth-child( odd ){
+				clear:none;
+			}
+
+			
+
 		}
 
 		img {

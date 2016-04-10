@@ -1,11 +1,15 @@
+var context;
+
 (function(){
 
 	var vhNav = {
 
 		init : function () {
 
+			this.challengeContext();
 			this.sitckyNav();
 			this.smoothScroll();
+			
 		},
 
 		smoothScroll : function() {
@@ -20,6 +24,14 @@
 				    $('html, body').animate({
 				      scrollTop: target.offset().top
 				    }, 1000);
+
+				    //close the mobile menu
+
+				    if( context === 'mobile' ){
+				    	$( '#hamburger-helper').prop( "checked", false );
+
+				    }
+
 				    return false;
 				  }
 				}
@@ -43,13 +55,39 @@
 
 			var $window = $( window );
 
-			$window.scroll( function(){
-				if( $window.scrollTop() > 40 ){
-					$( 'nav' ).addClass( 'sticky' );
-				} else {
-					$( 'nav' ).removeClass( 'sticky' );
-				}
-			} );
+			if( context === 'mobile' ){
+				
+				$( 'nav' ).addClass( 'sticky' );
+
+			} else {
+
+				$window.scroll( function(){
+					if( $window.scrollTop() > 40 ){
+						$( 'nav' ).addClass( 'sticky' );
+					} else {
+						$( 'nav' ).removeClass( 'sticky' );
+					}
+				} );
+			}
+
+		},
+
+			/**
+		 * Device targeting should be based on media queries in CSS,
+		 * we do not define this in scripts
+		 * Modified from http://davidwalsh.name/device-state-detection-css-media-queries-javascript
+		 */
+
+		challengeContext: function() {
+			var challengeElement = document.querySelector('.breakpoint-context'),
+				styles = window.getComputedStyle(challengeElement),
+				index = parseInt(styles.getPropertyValue('z-index'), 10),
+				states = {
+					1: 'mobile',
+					2: 'tablet'
+				};
+
+			context = states[index] || 'desktop';
 
 		}
 	};
@@ -60,6 +98,11 @@
 
 		vhNav.init();
 
+	} );
+
+	$( window ).resize( function() {
+
+		vhNav.challengeContext();
 	} );
 
 })();

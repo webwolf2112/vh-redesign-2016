@@ -7,7 +7,8 @@
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 		<link rel="stylesheet" href="build/styles.css">
 	</head>
-	<body id="home">	
+	<body id="home">
+	<div class="breakpoint-context"></div>	
 	<nav>
 		<div class="container">
 			<a href="index.php" class="logo"><img src="img/VanessaLogo.png" alt="Vanessa Henson Logo"></a>

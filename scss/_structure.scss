@@ -2,6 +2,25 @@ body {
 	position: relative;
 }
 
+.breakpoint-context {
+  position: absolute;
+  top: -999em;
+  left: -999em;
+  z-index: 0;
+
+  @include breakpoint( $break-small){
+  	z-index: 1;
+  } 
+
+  @include breakpoint ( $break-medium ){
+  	z-index: 2;
+  }
+
+  @include breakpoint( $break-large ){
+  	z-index: 3;
+  }
+}
+
 img {
 	display: inline-block;
 }

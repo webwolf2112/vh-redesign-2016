@@ -24,17 +24,17 @@ var projectApp = angular.module('projects', []);
 				url: 'https://ritahazan.com/',
 				description: 'I was the the sole developer on this custom shopify website. I implemented pixel perfect designs as well as stretching the boundries of Shopify by creating very customized complex functionality. I worked to create numerous custom Shopify templates, and wrote custom code with Liquid, Javascript, JSON, HTML and CSS.'
 			},{
-				name: 'CU Anschutz',
-				info: 'CU Anschutz "Micro" Website',
-				img: 'img/anschutz.jpg',
-				url: 'http://supportcuanschutz.ucdenver.edu/',
-				description: 'I worked with my team to create this pixel perfect responsive Micro-Site. This design required very complex CSS for the sliders, as well as very complex data structure. The client was very satisfied. I wrote custom PHP, Javascript, HTML, and CSS for this project.'
-	 		},{
 				name: 'Reebok',
 				info: 'Reebok Shoes and Apparel',
 				img: 'img/reebok.jpg',
 				url: 'http://www.reebok.com/us/',
 				description: 'I have been the lead developer on numerous projects with Reebok and have custom code on nearly every page on the the current Reebok website. I was in charge of the Superbowl Add Homepage redesign, Athletes Pages, UFC launch pages, and numerous landing pages. I wrote extensive custom Javascript for all of these projects, as well as HTML, JSON, and CSS.'
+	 		},{
+	 			name: 'Blue Star',
+	 			info: 'Blue Star High End Kitchen Appliances',
+	 			img: 'img/bluestar.jpg',
+	 			url: 'http://www.bluestarcooking.com/',
+	 			description: 'I am incharge of troubleshooting and upgrating this custom wordpress website.'
 	 		},
 			{
 				name: 'Crosfit Store by Reebok',
@@ -42,6 +42,12 @@ var projectApp = angular.module('projects', []);
 				img: 'img/crossfit.jpg',
 				url: 'http://www.store.crossfit.com/',
 				description: 'I was in charge of creating the new website header and footer. I created most of the code on the current homepage, including the masthead, hover product sections and the hover image changer. I wrote custom Javascript, HTML and CSS for this project.'
+	 		},{
+				name: 'CU Anschutz',
+				info: 'CU Anschutz "Micro" Website',
+				img: 'img/anschutz.jpg',
+				url: 'http://supportcuanschutz.ucdenver.edu/',
+				description: 'I worked with my team to create this pixel perfect responsive Micro-Site. This design required very complex CSS for the sliders, as well as very complex data structure. The client was very satisfied. I wrote custom PHP, Javascript, HTML, and CSS for this project.'
 	 		},{
 				name: 'Crocs',
 				info: 'Crocs Shoes',
@@ -97,6 +103,12 @@ var projectApp = angular.module('projects', []);
 	 			url: 'http://www.j-macoboulder.com/',
 	 			description: 'I successfully implemented and hand coded this pixel perfect website from the clients mock-up design. I accurately sliced all photoshop graphics, as well as hand coding HTML5, CSS3, Javascript & jQuery in this website. This website includes custom jquery and PHP as well. This website was made to be partially responsive using the Skeleton CSS grid framework. As the client preferred to have a separate mobile website I implemented a jquery mobile version of this website as well.'
 	 		},{
+	 			name: 'AB Installations',
+	 			info: 'AB Installations',
+	 			img: 'img/abinstall.jpg',
+	 			url: 'http://abinstallationsinc.com/',
+	 			description: 'I successfully implemented and hand coded this responsive website and assisted the designer in creating a color scheme. I accurately sliced all photoshop graphics, as well as hand coding HTML5, CSS3, Javascript & jQuery in this website.'
+	 		},{
 	 			name: 'Laurie Kaufman Realestate',
 	 			info: 'Laurie Kaufman Real Estate',
 	 			img: 'img/laurie.png',
@@ -108,19 +120,7 @@ var projectApp = angular.module('projects', []);
 	 			img: 'img/lynnLarge.jpg',
 	 			url: 'http://lynnryanboulder.com/',
 	 			description: 'I successfully implemented and hand coded this pixel perfect website from the clients mock-up design. I accurately sliced all photoshop graphics, as well as hand coding HTML5, CSS3, Javascript & jQuery in this website. This website includes custom jquery and PHP as well. This website includes custom jquery and PHP as well.This website was made to be partially responsive using a CSS grid framework. As the client preferred to have a separate mobile website I implemented a jquery mobile version of this website as well.'
-	 		},{
-	 			name: 'AB Installations',
-	 			info: 'AB Installations',
-	 			img: 'img/abinstall.jpg',
-	 			url: 'http://abinstallationsinc.com/',
-	 			description: 'I successfully implemented and hand coded this responsive website and assisted the designer in creating a color scheme. I accurately sliced all photoshop graphics, as well as hand coding HTML5, CSS3, Javascript & jQuery in this website.'
-	 		},{
-	 			name: 'Blue Star',
-	 			info: 'Blue Star High End Kitchen Appliances',
-	 			img: 'img/bluestar.png',
-	 			url: 'http://www.bluestarcooking.com/',
-	 			description: 'I am incharge of troubleshooting and upgrating this custom wordpress website.'
-	 		},
+	 		}
 	 		// {
 	 		// 	name: '',
 	 		// 	info: '',
