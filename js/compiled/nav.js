@@ -22,7 +22,7 @@ var context;
 				  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 				  if (target.length) {
 				    $('html, body').animate({
-				      scrollTop: target.offset().top
+				      scrollTop: target.offset().top - 50
 				    }, 1000);
 
 				    //close the mobile menu
@@ -44,7 +44,7 @@ var context;
                 hash = $('#' + hash);
 
                 $('html,body').animate({
-                     scrollTop: hash.offset().top
+                     scrollTop: hash.offset().top - 50
                 }, 1000);
                 return false;
             }
@@ -56,7 +56,7 @@ var context;
 			var $window = $( window );
 
 			if( context === 'mobile' ){
-				
+
 				$( 'nav' ).addClass( 'sticky' );
 
 			} else {
