@@ -12,10 +12,10 @@
 	<br/>
 	<section>
 		<div class="highlights slide-content">
-			<div ng-repeat="highlight in highlights">
+			<div class="highlight-single" ng-repeat="highlight in highlights">
 				<div class="name">{{ highlight.name }}</div>
 				<div class="description"> 
-					<div ng-repeat="description in highlight.description" >{{ description }}</div>
+					<p ng-repeat="description in highlight.description" >{{ description }}</p>
 				</div>
 			</div>
 		</div>
@@ -24,7 +24,7 @@
 		<div class="toggle-button" ng-show="education" ng-click="showSection( 'education-toggle', 'education' )" class="education-toggle"><span>View</span> Education</div>
 		<br/>
 			<div class="education slide-content">
-				<div ng-repeat="edu in education">
+				<div class="education-single" ng-repeat="edu in education">
 					<div class="year ng-click=">{{ edu.year }}</div>
 					<div class="field"> 
 						<div ng-repeat="field in edu.field">{{ field }}</div>

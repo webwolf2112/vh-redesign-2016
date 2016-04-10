@@ -83,97 +83,6 @@
 	}
 }
 
-.skills {
-	@include clearfix;
-	background: $white;
-	padding: 5% 15px;
-
-	h2 {
-		@include fontsize( 4 );
-		margin-bottom: 50px;
-	}
-
-	div {
-		@include boxsizing;
-	}
-
-	.skill-lists {
-		@include clearfix;
-		max-width: $container-small;
-		margin: auto;
-
-		ul {
-			@include boxsizing;
-			@include fontsize( 1.2 );
-			font-weight: 400;
-			width: 33.33%;
-			float: left;
-			margin-bottom: 70px;
-			text-align: left;
-			text-transform: uppercase;
-			line-height: 1.5em;
-
-		}
-	}
-
-
-	.highlights {
-		display: none;
-
-		.name {
-			float: left;
-			width: 25%;
-		}
-
-		.description {
-			@include clearfix;
-			float: left;
-			width: 75%;
-			box-sizing: border-box;
-
-		}
-	}
-
-	.education {
-		display: none;
-
-		.year {
-			@include clearfix;
-			float: left;
-			width: 25%;
-		}
-
-		.field {
-			float: left;
-			width: 75%;
-		}
-	}
-
-	.toggle-button {
-		@include clearfix;
-		display: inline-block;
-		border: 1px solid $dark-gray;
-		padding: 20px 50px;
-		cursor: pointer;
-		margin-bottom: 25px;
-		text-transform: uppercase;
-		font-weight: 500;
-	}
-
-	.slide-content {
-		@include clearfix;
-		padding-bottom: 50px;
-	}
-}
-
-.about {
-
-	padding: 5%;
-	color: $white;
-	height: 500px;
-
-}
-
 .projects {
 	@include clearfix;
 	@include boxsizing;
@@ -200,5 +109,9 @@
 			width: 100%;
 			max-width: 100%;
 		}
+	}
+
+	.description {
+		display: none;
 	}
 }

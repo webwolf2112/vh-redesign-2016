@@ -23,8 +23,8 @@
 			var somerandom = function (){
 
 				randomNumber = Math.floor(Math.random() * randomQuote.length);
-			 	
-				document.getElementById("quote").innerHTML=randomQuote[randomNumber];
+
+				$( '#quote' ).html(randomQuote[randomNumber]);
 
 				return ;		
 				
