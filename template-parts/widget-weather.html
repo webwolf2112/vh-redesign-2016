@@ -1,0 +1,28 @@
+<div class="weather-widget" ng-controller="weatherAppController as weather" >
+
+	{{ weather.info.text }} 
+	<p>Current Weather in {{ weather.info.city }} {{ weather.info.state }} 
+	<br/>
+	<img src="{{ weather.info.iconUrl }}" alt="icon" />
+	</br> 
+	{{ weather.info.currentTemp  }} degrees</p>
+	<div class="ten-day-continer">
+		<div ng-repeat="day in weather.days" class="day-container">
+			 <div class="day"> {{ day.day }} </div>
+			 <img src="{{ day.iconUrl }}" alt="dayicon" />
+			 <div class="conditions"> {{ day.conditions}} </div>
+			 <div class="temp high" >High: {{ day.highTemp }} </div>
+			 <div class="temp low" >Low: {{ day.lowTemp }} </div>
+			 <div ng-show="{{ day.snowTotal }}" class="snowtotal" >Total Snow: {{ day.snowTotal }} inches</div>
+		</div>
+	</div>
+
+	<form id="cityForm" ng-submit="weather.formChangeCity()">
+		<label>Enter City you would like to View</label>
+		<input id="city" type="text" ng-model="weather.info.currentCity">
+		<label>Two Letter State Code</label>
+		<input id="city" type="text" ng-model="weather.info.currentState">
+		<input type="submit" value="submit"/>
+	</form>
+
+</div>

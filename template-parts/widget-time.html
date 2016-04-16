@@ -1,0 +1,76 @@
+<div class="widget-time" ng-controller="timeAppController as time" >
+	<div class="title">{{ time.text }}</div>
+	<div class="time-zone mountain">
+		<h2>Mountain Time</h2>
+		<div class="date">
+			<span class="day-of-week">{{ time.mountain.dayOfWeek }}</span>
+			<span class="month">{{ time.mountain.month }}</span>
+			<span class="day">{{ time.mountain.day }}</span>
+		</div>
+		<div class="time">
+			<span class="hour">{{ time.mountain.hour }}</span>:
+			<span class="minutes">{{ time.mountain.minutes }}</span>
+			<span class="am-pm">{{ time.mountain.ampm }}</span>
+		</div>
+		<div class="clients">
+			<p class="client" ng-repeat="client in time.mountain.clients">
+				{{ client }}
+			</p>
+		</div>
+	</div>
+
+	<div class="time-zone pacific">
+		<h2>Pacific Time</h2>
+		<div class="date">
+			<span class="day-of-week">{{ time.pacific.dayOfWeek }}</span>
+			<span class="month">{{ time.pacific.month }}</span>
+			<span class="day">{{ time.pacific.day }}</span>
+		</div>
+		<div class="time">
+			<span class="hour">{{ time.pacific.hour }}</span>:
+			<span class="minutes">{{ time.pacific.minutes }}</span>
+			<span class="am-pm">{{ time.pacific.ampm }}</span>
+		</div>
+		<div class="clients">
+			<p class="client" ng-repeat="client in time.pacific.clients">
+				{{ client }}
+			</p>
+		</div>
+	</div>
+	<div class="time-zone central">
+		<h2>Central Time</h2>
+		<div class="date">
+			<span class="day-of-week">{{ time.central.dayOfWeek }}</span>
+			<span class="month">{{ time.central.month }}</span>
+			<span class="day">{{ time.central.day }}</span>
+		</div>
+			<div class="time">
+			<span class="hour">{{ time.central.hour }}</span>:
+			<span class="minutes">{{ time.central.minutes }}</span>
+			<span class="am-pm">{{ time.central.ampm }}</span>
+		</div>
+		<div class="clients">
+			<p class="client" ng-repeat="client in time.central.clients">
+				{{ client }}
+			</p>
+		</div>
+	</div>
+	<div class="time-zone eastern">
+		<h2>Eastern Time</h2>
+		<div class="date">
+			<span class="day-of-week">{{ time.eastern.dayOfWeek }}</span>
+			<span class="month">{{ time.eastern.month }}</span>
+			<span class="day">{{ time.eastern.day }}</span>
+		</div>
+		<div class="time">
+			<span class="hour">{{ time.eastern.hour }}</span>:
+			<span class="minutes">{{ time.eastern.minutes }}</span>
+			<span class="am-pm">{{ time.eastern.ampm }}</span>
+		</div>
+		<div class="clients">
+			<p class="client" ng-repeat="client in time.eastern.clients">
+				{{ client }}
+			</p>
+		</div>
+	</div>
+</div>
