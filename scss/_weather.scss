@@ -1,0 +1,52 @@
+.weather-widget {
+	img {
+		display: block;
+		margin: auto;
+	}
+
+	padding: 20px 5%;
+
+	.current-weather {
+		margin-bottom: 40px;
+	}
+
+	.title {
+		margin-bottom: 20px;
+	}
+
+	.ten-day-continer {
+		@include clearfix;
+		box-sizing: border-box;
+
+		&>div {
+			box-sizing: border-box;
+			width: 25%;
+			float: left;
+
+			&:nth-child(5){
+				clear: both;
+			}
+
+
+			@include breakpoint($break-medium){
+				width: 20%;
+
+				&:nth-child(6){
+					clear: both;
+				}
+
+				&:nth-child(5){
+					clear: none;
+				}
+			}
+
+			
+		}
+		
+	}
+
+	#cityForm {
+		margin-top: 50px;
+	}
+
+}

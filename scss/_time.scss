@@ -1,0 +1,25 @@
+.widget-time {
+	@include clearfix;
+	padding-bottom: 50px;
+
+	.title {
+		@include fontsize( 1.5 );
+		padding-bottom: 20px;
+	}
+
+	h2 {
+		@include fontsize( 1.1 );
+		color: $white;
+		font-weight: normal;
+		margin-bottom: 8px;
+	}
+
+	.time-zone {
+		@include clearfix;
+		width: 25%;
+		box-sizing: border-box;
+		float: left;
+	}
+
+
+}

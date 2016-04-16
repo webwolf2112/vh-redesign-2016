@@ -21,6 +21,11 @@
 			<about-me id="nav-about"></about-me>
 
 			<single-project id="nav-portfollio"></single-project>
+
+			<time-widget></time-widget>
+
+			<weather-widget></weather-widget>
+
 		</div>
 
 	</div>

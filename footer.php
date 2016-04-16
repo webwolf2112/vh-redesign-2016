@@ -7,6 +7,7 @@
 		<script src="build/vh-custom.js"></script>
 		<script src="js/vh-app.js"></script>
 		<script src="js/vh-skills.js"></script>
-		
+		<script src="js/vh-weather.js"></script>
+		<script src="js/vh-time.js"></script>
 	</body>
 </html>

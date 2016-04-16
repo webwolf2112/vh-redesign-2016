@@ -1,11 +1,12 @@
 <div class="weather-widget" ng-controller="weatherAppController as weather" >
-
-	{{ weather.info.text }} 
-	<p>Current Weather in {{ weather.info.city }} {{ weather.info.state }} 
-	<br/>
-	<img src="{{ weather.info.iconUrl }}" alt="icon" />
-	</br> 
-	{{ weather.info.currentTemp  }} degrees</p>
+	<div class="current-weather">
+		<p>Current Weather in {{ weather.info.city }} {{ weather.info.state }} 
+		<br/>
+		<img src="{{ weather.info.iconUrl }}" alt="icon" />
+		</br> 
+		{{ weather.info.currentTemp  }} degrees</p>
+	</div>
+	<p class="title js-ten-day">Ten Day Forcast:</p>
 	<div class="ten-day-continer">
 		<div ng-repeat="day in weather.days" class="day-container">
 			 <div class="day"> {{ day.day }} </div>
