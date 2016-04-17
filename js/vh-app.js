@@ -1,4 +1,4 @@
-var projectApp = angular.module('projects', []);
+var projectApp = angular.module('projects', ['ngRoute']);
 
 	projectApp.directive('singleProject', function() {
 		return {

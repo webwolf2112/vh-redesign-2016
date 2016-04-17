@@ -11,7 +11,8 @@
 	}
 
 	.title {
-		margin-bottom: 20px;
+		margin-bottom: 50px;
+		text-transform:uppercase;
 	}
 
 	.ten-day-continer {
@@ -22,6 +23,7 @@
 			box-sizing: border-box;
 			width: 25%;
 			float: left;
+			margin-bottom: 40px;
 
 			&:nth-child(5){
 				clear: both;
@@ -46,7 +48,7 @@
 	}
 
 	#cityForm {
-		margin-top: 50px;
+		margin: 50px 0;
 	}
 
 }

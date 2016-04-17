@@ -1,8 +1,8 @@
 <div class="weather-widget" ng-controller="weatherAppController as weather" >
 	<div class="current-weather">
-		<p>Current Weather in {{ weather.info.city }} {{ weather.info.state }} 
+		<p class="title">Current Weather in {{ weather.info.city }} {{ weather.info.state }} 
 		<br/>
-		<img src="{{ weather.info.iconUrl }}" alt="icon" />
+		<img ng-src="{{ weather.info.iconUrl }}" alt="icon" />
 		</br> 
 		{{ weather.info.currentTemp  }} degrees</p>
 	</div>
@@ -10,7 +10,7 @@
 	<div class="ten-day-continer">
 		<div ng-repeat="day in weather.days" class="day-container">
 			 <div class="day"> {{ day.day }} </div>
-			 <img src="{{ day.iconUrl }}" alt="dayicon" />
+			 <img ng-src="{{ day.iconUrl }}" alt="dayicon" />
 			 <div class="conditions"> {{ day.conditions}} </div>
 			 <div class="temp high" >High: {{ day.highTemp }} </div>
 			 <div class="temp low" >Low: {{ day.lowTemp }} </div>

@@ -16,15 +16,12 @@
 		
 		<div class="apps" ng-app="projects">
 
+
 			<professional-skills id="nav-skills"></professional-skills>
 		
 			<about-me id="nav-about"></about-me>
 
-			<single-project id="nav-portfollio"></single-project>
-
-			<time-widget></time-widget>
-
-			<weather-widget></weather-widget>
+			<div ng-view></div>
 
 		</div>
 

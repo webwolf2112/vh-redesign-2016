@@ -1,10 +1,11 @@
 .widget-time {
 	@include clearfix;
-	padding-bottom: 50px;
+	padding: 50px;
 
 	.title {
 		@include fontsize( 1.5 );
-		padding-bottom: 20px;
+		text-transform: uppercase;
+		margin-bottom: 50px;
 	}
 
 	h2 {

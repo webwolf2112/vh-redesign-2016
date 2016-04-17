@@ -206,7 +206,7 @@ projectApp.controller( 'timeAppController', [ '$scope','$timeout', timeAppContro
 
 				//mountain time variables 
 				time.mountain.hour = hourConversion( mountainTime.getHours() );
-				time.mountain.day = mountainTime.getDay();
+				time.mountain.day = mountainTime.getDate();
 				time.mountain.dayOfWeek = dayConversion( time.mountain.day );
 				time.mountain.month = monthConversion( mountainTime.getMonth() );
 				time.mountain.minutes = minuteConversion( mountainTime.getMinutes() );
@@ -215,7 +215,7 @@ projectApp.controller( 'timeAppController', [ '$scope','$timeout', timeAppContro
 
 				//pacific time variables
 				time.pacific.hour = hourConversion( pacificTime.getHours() );
-				time.pacific.day = pacificTime.getDay();
+				time.pacific.day = pacificTime.getDate();
 				time.pacific.dayOfWeek = dayConversion( time.pacific.day );
 				time.pacific.month = monthConversion( pacificTime.getMonth() );
 				time.pacific.minutes = minuteConversion( pacificTime.getMinutes() );
@@ -223,7 +223,7 @@ projectApp.controller( 'timeAppController', [ '$scope','$timeout', timeAppContro
 
 				//central time variables
 				time.central.hour = hourConversion( centralTime.getHours() );
-				time.central.day = centralTime.getDay();
+				time.central.day = centralTime.getDate();
 				time.central.dayOfWeek = dayConversion( time.central.day );
 				time.central.month = monthConversion( centralTime.getMonth() );
 				time.central.minutes = minuteConversion( centralTime.getMinutes() );
@@ -231,7 +231,7 @@ projectApp.controller( 'timeAppController', [ '$scope','$timeout', timeAppContro
 
 				//eastern time variables
 				time.eastern.hour = hourConversion( easternTime.getHours() );
-				time.eastern.day = easternTime.getDay();
+				time.eastern.day = easternTime.getDate();
 				time.eastern.dayOfWeek = dayConversion( time.eastern.day );
 				time.eastern.month = monthConversion( easternTime.getMonth() );
 				time.eastern.minutes = minuteConversion( easternTime.getMinutes() );
